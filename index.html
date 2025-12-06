@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons Why I Love You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img_music/favnasb.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img_music/favnasb.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img_music/favnasb.png">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="music-toggle" onclick="toggleMusic()" title="Toggle Music">
+        <svg id="musicIcon" viewBox="0 0 24 24">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="img_music/04 Soft Spot.flac" type="audio/mpeg">
+    </audio>
+
+    <div class="hero" style="background-image: url('img_music/nasb1.jpg');">
+        <div class="hero-content">
+            <h1>100 Reasons</h1>
+            <p>Why I Love You</p>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="#8b6f47">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="reasons-container">
+        <h2 class="section-title">Reasons Why I Love You</h2>
+        
+        <!--<div class="upload-instructions">
+            <h3>📸 How to Add Your Photos</h3>
+            <p><strong>For the hero image:</strong> Replace <code>YOUR_HERO_IMAGE.jpg</code> in the HTML with your image filename</p>
+            <p><strong>For photo sections:</strong> Replace <code>YOUR_PHOTO_1.jpg</code>, <code>YOUR_PHOTO_2.jpg</code>, etc.</p>
+            <p><strong>For background music:</strong> Replace <code>YOUR_MUSIC_FILE.mp3</code> with your audio filename</p>
+            <p style="margin-top: 20px; font-size: 0.95rem;">Place all your image and music files in the same folder as this HTML file, then update the filenames in the code.</p>
+        </div>-->
+
+        <div class="reason-card">
+            <div class="reason-number">#1</div>
+            <div class="reason-text">I love the way you take care of me, even in the smallest ways.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#2</div>
+            <div class="reason-text">You make me feel cherished in ways I never thought possible.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#3</div>
+            <div class="reason-text">I love the way you look at life with such hope and determination.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#4</div>
+            <div class="reason-text">You've taught me the value of patience and unconditional love.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#5</div>
+            <div class="reason-text">The way you take time to understand me means the world to me.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#6</div>
+            <div class="reason-text">I love how you're not just my partner but my greatest source of strength.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#7</div>
+            <div class="reason-text">You've given me memories that I'll treasure forever.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#8</div>
+            <div class="reason-text">I admire how you stand up for what you believe in, no matter the challenge.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#9</div>
+            <div class="reason-text">You've made me feel loved in ways no one else ever has.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#10</div>
+            <div class="reason-text">I trust you with my deepest secrets, and you never judge me.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#11</div>
+            <div class="reason-text">I love how you make me want to be the best version of myself.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#12</div>
+            <div class="reason-text">You have a way of bringing light into the darkest situations.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#13</div>
+            <div class="reason-text">I adore your creativity and how you see beauty where others don't.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#14</div>
+            <div class="reason-text">You never let me feel alone, even in my toughest moments.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#15</div>
+            <div class="reason-text">The way you laugh at my silly jokes makes me feel invincible.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#16</div>
+            <div class="reason-text">I love how you take care of the people you love, including me.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#17</div>
+            <div class="reason-text">You make the future feel bright and full of possibilities.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#18</div>
+            <div class="reason-text">The trust you've built in our relationship is a treasure I'll protect forever.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#19</div>
+            <div class="reason-text">You've shown me that love is not just a feeling but a commitment.</div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-number">#20</div>
+            <div class="reason-text">I admire your dedication to the things and people you care about.</div>
+        </div>
+
+        <a href="section2.html"><button class="next-button" onclick="">Want to see more......? →</button></a>
+
+        <!--<div class="photo-section" style="background-image: url('img_music/photo_2025-12-05_13-59-55.jpg');"></div>-->
+
+               
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

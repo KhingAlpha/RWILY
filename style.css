@@ -1,0 +1,257 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f5f0e8 0%, #faf7f2 100%);
+            color: #5a4a3a;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: 1910px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(250, 247, 242, 0.75);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #8b6f47;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #5a4a3a;
+            font-style: italic;
+        }
+
+        .music-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #d4c4b0;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .music-toggle:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: scale(1.1);
+        }
+
+        .music-toggle svg {
+            width: 30px;
+            height: 30px;
+            fill: #8b6f47;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-20px); }
+            60% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        .reasons-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 100px 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #8b6f47;
+            margin-bottom: 80px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .reason-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e8dcc8;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
+        }
+
+        .reason-card:hover {
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            transform: translateY(-5px);
+        }
+
+        .reason-number {
+            font-size: 2rem;
+            color: #d4c4b0;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .reason-text {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #5a4a3a;
+        }
+
+        .next-button {
+            display: block;
+            margin: 60px auto;
+            padding: 20px 60px;
+            background: #8b6f47;
+            color: #faf7f2;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-family: 'Georgia', serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(139, 111, 71, 0.3);
+        }
+
+        .next-button:hover {
+            background: #6f5837;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(139, 111, 71, 0.4);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .photo-section {
+            min-height: 60vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            margin: 80px 0;
+        }
+
+        .photo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(250, 247, 242, 0.3);
+        }
+
+        .final-message {
+            text-align: center;
+            padding: 120px 40px;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .final-message h2 {
+            font-size: 3rem;
+            color: #8b6f47;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .final-message p {
+            font-size: 1.5rem;
+            color: #5a4a3a;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .reason-card {
+                padding: 30px;
+            }
+            .reason-text {
+                font-size: 1.1rem;
+            }
+        }
+
+        .upload-instructions {
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px dashed #d4c4b0;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .upload-instructions h3 {
+            color: #8b6f47;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .upload-instructions p {
+            color: #5a4a3a;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .upload-instructions code {
+            background: #f5f0e8;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #8b6f47;
+        }
